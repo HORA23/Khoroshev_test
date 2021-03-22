@@ -1,5 +1,6 @@
 
 To run the application you need run command:
+mvn clean package
 docker compose up
 
 Docker run spring boot app and postresql database
