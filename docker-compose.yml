@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  app:
+    image: 'test-khoroshev:latest'
+    build:
+      context: .
+    ports:
+      - "8081:8081"
+    container_name: app
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/root
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=root
+
+  db:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.db
+    container_name: db
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
