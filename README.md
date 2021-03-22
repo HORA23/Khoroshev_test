@@ -11,4 +11,5 @@ The application can be viewed with Postman called http://localhost:8081/hello/co
 
 Application have endpoint to get all contacts in DB.
 
-Build in master branch:  [![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/HORA23/Khoroshev_test?branch=master)
+Build in master branch:  
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://app.circleci.com/pipelines/github/HORA23/Khoroshev_test?branch=master)
